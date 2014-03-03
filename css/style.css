@@ -1,0 +1,371 @@
+/* iPhone screen animation */
+
+@-webkit-keyframes screen {
+	1%   { -webkit-transform: scale(0.0); opacity: 0; }
+	100% { -webkit-transform: scale(1.0); opacity: 1; }
+}
+
+@-moz-keyframes screen {
+	1%   { -webkit-transform: scale(0.0); opacity: 0; }
+	100% { -webkit-transform: scale(1.0); opacity: 1; }
+}
+
+
+/* Icon Font Import */
+
+@font-face {
+    font-family: 'social';
+    src: url('social/fonts/social.eot');
+    src: url('social/fonts/social.eot?#iefix') format('embedded-opentype'),
+         url('social/fonts/social.woff') format('woff'),
+         url('social/fonts/social.ttf') format('truetype'),
+         url('social/fonts/social.svg#entypo') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Selections */
+
+::selection {
+	background: #666566;
+	color: #fff;
+	text-shadow: none; /* Safari */
+}
+	
+::-moz-selection {
+	background: #666566;
+	color: #fff;
+	text-shadow: none; /* Firefox */
+}
+
+
+/* Links */ 
+
+a {
+	color: #ffffff;
+
+}
+
+a:hover {
+	color: #a8c2ae;
+}
+
+html {
+	-webkit-font-smoothing: antialiased;
+	text-rendering: optimizeLegibility;
+	-webkit-animation-name: fadeIn;
+	-moz-animation-name: fadeIn;
+	-ms-animation-name: fadeIn;
+	-o-animation-name: fadeIn;
+	animation-name: fadeIn;
+	-webkit-animation-fill-mode: both;
+	-webkit-animation-duration: .5s;
+	-webkit-animation-iteration-count: 1;
+	font-family: 'Source Sans Pro', sans-serif;
+    background: url('../img/background2x.png');
+}
+
+#container {
+	width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.columns {
+	height: auto;
+}
+
+.six {
+	margin-top: 24px;
+}
+
+.phone {
+	margin-top: 48px;
+}
+
+#mc_embed_signup {
+    margin-top:25px;
+    clear:left; 
+    background-color:transparent;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size:24px;
+    color:#ffffff;
+}
+
+#mce-EMAIL {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size:24px;
+    margin-top:8px;
+    color: #0f1011;
+    background-color: #ede6e0;
+    border:none;
+    border-radius: 5px;
+    height:62px;
+    padding-left: 15px;
+    width:308px;
+}
+
+#mc-embedded-subscribe {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size:24px;
+    color:#ffffff;
+    background-color:#7cc62c;
+    margin-top:8px;
+    border-radius: 5px;
+}
+
+.button {
+    border:0px;
+    width:147px;
+    height:62px;
+    cursor: pointer;    
+}
+
+#mc-embedded-subscribe:hover {
+	background-color: #71ba2f;
+}
+
+body {
+	font-family: 'Source Sans Pro', sans-serif;
+	font-size: 14pt;
+	width: 100%;
+	text-rendering: optimizeLegibility;
+	-webkit-font-smoothing: antialiased;
+}
+
+.icon {
+	width: 130px;
+	height: auto;
+	margin-top: 100px;
+	margin-bottom: 30px;
+}
+
+h1 {
+	margin-top: 6px;
+	font-size: 50px;
+	color: #ffffff;
+}
+
+h3 {
+	font-size: 24px;
+	margin-bottom: 12px;
+	color: #434445;
+}
+
+h4 {
+	text-align: left;
+	font-size: 24px;
+	margin-top: 12px;
+	color: #5f5e5e;
+}
+
+h5 {
+	font-size: 24px;
+	margin-top: 44px;
+	color: #434445;
+}
+
+li {
+		color: #434445;
+		line-height: 34px;
+		font-size: 20px;
+		margin-left: 44px;
+		list-style-type:disc;
+}
+
+.nav {
+	font-family: "social";
+	color: #aeaeae;
+	line-height: 50px;
+	margin-top: 4px;
+	font-size: 34px;
+	-webkit-transition: all .3s ease;
+	-moz-transition: all .3s ease;
+	transition: all .3s ease;
+}
+
+.twitter:hover {
+	color: #00bde9;
+	-webkit-transition: all .3s ease;
+	-moz-transition: all .3s ease;
+	transition: all .3s ease;
+}
+
+.description {
+	height: auto;
+    text-align:left;
+    color:#FFFFFF;
+    font-size:24px;
+    margin-top:40px;
+    margin-bottom:35px;
+    line-height:28px;
+}
+
+strong {
+	font-weight: bold;
+}
+
+#social {
+	margin-top: 32px;
+}
+
+#app-store {
+	margin-top: 44px;
+}
+
+#app-store a {
+	background: url('../img/appstorebutton.png');
+	width: 262px; height: 84px;
+	display: block;
+	text-indent: -9999px;
+	background-position: top;
+}
+
+#app-store a:hover {
+	background-position: center;
+}
+
+#app-store a:active {
+	background-position: bottom;
+}
+
+#screen {
+	-webkit-animation-name: screen;
+	-webkit-animation-timing-function: ease-in;
+	-webkit-animation: screen 0.5s 0.7s 1 alternate ease-in-out forwards;
+	-moz-animation-name: screen;
+	-moz-animation-timing-function: ease-in;
+	-moz-animation: screen 0.5s 0.7s 1 alternate ease-in-out forwards;
+	background: url('../img/screen1.png');
+	width: 228px; height: 400px;
+	position: absolute;
+	margin-left: 109px;
+	margin-top: 78px;
+	z-index: 2;
+	opacity: 0;	
+}
+
+#iphone {
+	background: url('../img/iphonebackground.png');
+    background-repeat:no-repeat;
+	width: 282px; height: 561px;
+	display: block;
+	margin-left: auto;
+	margin-right:auto;	
+	margin-bottom: 0px;
+    margin-top: 34px;
+}
+
+
+footer {
+	display: block;
+	height: auto;
+	color: #ffffff;
+	text-align: center;
+	margin-bottom: 24px;
+	padding-top: 24px;
+	margin-bottom: -1px;
+}
+
+.left {
+	text-align: center;
+	margin-bottom: 24px;
+}
+
+.about {
+	margin-left: 12px;
+	margin-right: 12px;
+}
+
+.resiphone {
+	display: none;
+	width: 282px;
+	height: 565px;
+	margin-left: auto;
+	margin-right:auto;
+}
+
+.nav twitter {
+    color:#ffffff;
+}
+
+#contact {
+    float: center;
+}
+
+::-webkit-input-placeholder { /* WebKit browsers */
+    color:    #0f1011;
+    font-weight:normal;
+}
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+    color:    #0f1011;
+    font-weight:normal;
+}
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+    color:    #0f1011;
+    font-weight:normal;
+}
+:-ms-input-placeholder { /* Internet Explorer 10+ */
+    color:    #0f1011;
+    font-weight:normal;
+}
+
+@media only screen and (max-width: 480px) {
+	.row {
+		text-align: center;
+	}
+	
+	footer { 
+		text-align: center;
+		margin-top: 24px;
+		margin-bottom: 0px;
+	}
+	
+	.phone {
+		display: none;
+	}
+	
+	.twitter {
+		display: none;
+        color:#ffffff;
+	}
+	
+	li {
+		margin-left: none;
+		text-align: center;
+		list-style-type:none;
+	}
+	
+	h1 {
+		margin-top: 44px;
+        margin-bottom: 25px;
+	}
+	
+	h4 {
+		text-align: center;
+	}
+	
+	h3 {
+		font-weight: bold;
+	}
+	
+	.resiphone {
+		display: block;
+	}
+	
+	.icon {
+		margin-top: 32px;
+		margin-bottom: 0px;
+	}
+	
+	.nav {
+		text-align: center;
+	}
+	
+	#app-store a {
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+		margin-bottom: 32px;
+	}
+}
